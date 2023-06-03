@@ -1,0 +1,151 @@
+.card {
+  min-height: 70vh;
+  margin-top: 50px;
+}
+.card .container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card .container h1 {
+  display: inline-block;
+  width: 90%;
+  padding: 15px;
+  border-radius: 15px;
+  color: white;
+  background-color: #ff8f9c;
+  text-transform: capitalize;
+  margin: auto;
+  text-align: center;
+}
+.card .container table {
+  width: 60%;
+  border: 1px solid #777;
+  padding: 15px;
+  text-align: center;
+}
+table,
+th,
+td {
+  /* border: 1px solid black; */
+  /* border-collapse: collapse; */
+  padding: 10px;
+}
+.card .container table tr {
+  border: 1px solid #777;
+}
+
+.card .container table td img {
+  width: 100px;
+  margin: 15px;
+}
+th,
+td {
+  border-color: #96d4d4;
+}
+.card .container table td i,
+.card .container table td span {
+  background-color: #eeebeb;
+  padding: 10px;
+  font-size: 20px;
+  height: 20px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card .container .chekOut button:hover,
+.card .container table td i:hover,
+.card .container table td #B:hover,
+.card .container table td #N:hover {
+  background-color: #ff8f9c;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .card .container table {
+    width: 80%;
+  }
+  @media (max-width: 600px) {
+    .card .container table {
+      font-size: 15px;
+    }
+    .card .container table tr {
+      font-size: 15px;
+      font-weight: 100;
+    }
+    .card .container table td span {
+      background-color: #eeebeb;
+      padding: 8px;
+      font-size: 14px;
+      height: 15px;
+    }
+  }
+}
+
+/* == 
+ */
+.card .container .chekOut {
+  padding: 10px;
+  border: 1px solid #777;
+  border-radius: 10px;
+  width: 300px;
+  margin: 50px 0;
+  display: inline-block;
+}
+.card .container .chekOut h2 {
+  font-size: 25px;
+  font-weight: 100;
+  margin: 15px 0;
+}
+.card .container .chekOut p {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+.card .container .chekOut p span {
+  font-size: 15px;
+  margin-left: 20px;
+  color: #777;
+}
+.card .container .chekOut #s {
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 15px;
+  width: 150px;
+  padding: 5px;
+}
+.card .container .chekOut input {
+  padding: 8px;
+  outline: none;
+  display: block;
+  margin: 10px 0;
+  width: 150px;
+}
+.card .container .chekOut input::placeholder {
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.card .container .chekOut button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+  border: none;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card .container .chekOut #T {
+  color: #ff8f9c;
+}
+.card .container .chekOut img {
+  width: 200px;
+  display: block;
+  margin: 15px auto;
+}
+.remove {
+  display: none;
+}
